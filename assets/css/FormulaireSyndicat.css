@@ -1,0 +1,217 @@
+.nav_contact{
+    border-bottom: 2px solid #FFDD63;
+}
+/*-----Image et Texte TOP-------*/
+.idx_top_img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/bg_contact.jpg);
+    background-size: cover;
+    height: 50vh;
+    background-position: 50% 50%;
+    padding-top: 5%;
+}
+
+.idx_top_img section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    height: 100%;
+    width: 50%;
+    color: white;
+}
+/*-----Fin Image et Texte TOP-------*/
+
+
+/*--- Main ----*/
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.container_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*-----Formulaire------*/
+
+.formulaire{
+    display: flex;
+    width: 100%;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDD63;
+    color: #052E75;
+    
+}
+
+.formulaire form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    padding: 50px 0;    
+}
+
+.form_div_card{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-top: 1%;
+}
+
+.form_div_card2{
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.form_div_card3{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    padding-top: 1%;
+}
+
+.form_div_card4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-top: 1%;
+
+}
+.form_div_card4 .piece_jointe{
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #ffffff;
+        
+}
+.form_div_card4 .projet{
+        width: 100%;
+}
+.formulaire label{
+    width: 100%;
+    
+}
+
+.form_div_card input, .form_div_card2 input, .form_div_card3 input{
+    width: 100%;
+    height: 35px;
+    border: none;
+
+}
+
+
+.btn_submit input{
+    display: flex;
+    text-transform: uppercase;
+
+}
+
+.formulaire div{
+    display: flex;
+    align-items: flex-start;
+        
+}
+
+textarea {
+    resize: none;
+    border: none;
+}
+
+.btn_envoyer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.btn_envoyer input{
+    text-transform: uppercase;
+
+}
+.btn{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 6px 0 6px 15px;
+    margin: 20px auto;
+    display: inline-block;
+}
+.btn_arrow{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px 10px;
+}
+
+.btn:hover{
+    box-shadow: 4px 4px 14px rgb(0 0 0 / 20%);
+}
+/*********Fin Formulaire*******/
+
+
+@media all and (max-width: 991px){
+	/* BANNIERE */
+    .idx_top_img {
+        padding-top: 10%;
+    }
+    .idx_top_img section{
+        width: 40%;
+    }
+/* FORMULAIRE */
+    .form_div_card2, .form_div_card3{
+        width: 18%;
+    }
+    .texarea{
+        width: auto;
+
+    }
+
+}
+@media all and (max-width: 738px){
+    .idx_top_img section{
+        width: 60%;
+    }
+    .idx_top_img{
+        padding-top: 15%;
+    }
+    .formulaire form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+    .form_div_card{
+        width: 100%;
+    }
+    .form_div_card2, .form_div_card3{
+        width: 100% !important;
+    }
+}
+@media all and (max-width: 480px){
+    .idx_top_img {
+        height: 35vh;
+        padding-top: 31% !important;
+    }
+    .idx_top_img section {
+        padding-left: 0;
+        width: 85% !important;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+    }    
+}
+
+
+
+

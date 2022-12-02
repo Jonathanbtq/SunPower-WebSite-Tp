@@ -1,0 +1,280 @@
+.nav_activite{
+    border-bottom: 2px solid #FFDD63;
+}
+/*-----Image et Texte TOP-------*/
+
+.idx_top_img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../images/bg_activite.jpg");
+    background-size: cover;
+    height: 50vh;
+    background-position: 50% 50%;
+    padding-top: 5%;
+}
+
+.idx_top_img section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+
+.idx_top_img section ul {
+    color: white;
+    margin: 0;
+}
+
+
+/*-----Fin Image et Texte TOP-------*/
+
+
+/*--- Main ----*/
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.container_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*----R&D-/-Symboles---*/
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.rd, .title_symbol, .title_symbol h3, .montage_ctn, .act_com_ctn, .group_symbol{
+    padding: 50px 0;
+}
+.rd{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbfbfb;
+}
+.rd p{
+    text-align: center;
+    width: 50%;
+}  
+
+.title_symbol, .title_symbol h3{
+    text-align: center;
+    padding: 3% 0;
+    font-weight: bold;
+}
+
+
+.group_symbol{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.group_symbol p, .act_com_imgcard p{
+    flex-wrap: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+.symbol1, .symbol2, .symbol3{
+    display: flex ;
+    opacity: 0;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.symbol1.active, .symbol2.active, .symbol3.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.symbol1, .symbol2, .symbol3{
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+.montage_ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding: 4% 0; */
+    background-color: #fbfbfb;
+    
+}
+.montagne_wdt{
+    width: 60%;
+    
+}
+.montagne_wdt h2{
+    text-align: center;
+}
+.montage_ctn p{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.btn_contactus, .btn_ombriere{
+    text-transform: uppercase;
+}
+.act_com_ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4% 0;
+}
+.act_com_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+.act_com_img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 80%;
+    padding: 2% 0;
+    align-items: flex-end;
+}
+.act_com_img{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+.act_com_img.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.act_com_imgcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.act_com_imgcard.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.act_com_imgcard img{
+    width: 60%;
+}
+
+.btn_ombriere{
+    padding-bottom: 2%;
+
+}
+
+.act_com_txt{
+    width: 100%;
+    align-items: center;
+}
+
+.act_com_txt p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    
+}
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+/* The progress container (grey background) */
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ffffff;
+  }
+  
+  @media screen and (max-width: 991px) {
+	/* BANNIERE */
+    .idx_top_img section{
+        width: 40%;
+    }
+    .idx_top_img{
+        display: flex;
+        padding-top: 10%;
+    }
+    .group_symbol{
+        width: 90%;
+    }
+    .group_symbol img{
+        width: 25%;
+    }
+    .montagne_wdt{
+        width: 80%;
+    }
+    .act_com_img{
+        padding: 2% 0;
+    }
+    .act_com_imgcard img{
+        width: 50%;
+    }
+    .rd p{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .idx_top_img {
+        padding-top: 15%;
+    }
+    .idx_top_img section{
+        width: 70%;
+    }
+    .act_com_img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .idx_top_img {
+        height: 35vh;
+        padding-top: 33%;
+    }
+   .idx_top_img section{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .group_symbol{
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+    .symbol1, .symbol2, .symbol3{
+        width: 90%;
+    }
+    .act_com_img{
+        flex-wrap: wrap;
+        gap: 45
+    }
+}

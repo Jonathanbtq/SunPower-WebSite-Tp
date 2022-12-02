@@ -1,0 +1,111 @@
+.nav_activite{
+    border-bottom: 2px solid #FFDD63;
+}
+/*-----Image et Texte TOP-------*/
+
+.idx_top_img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../images/bg_ombriere.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 50vh;
+    padding-top: 5%;
+    margin-bottom: 2%;
+}
+.idx_top_img section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    height: 100%;
+    width: 50%;
+}
+.idx_top_img section h1{
+    color: #ffffff;
+}
+
+
+/*-----Fin Image et Texte TOP-------*/
+
+
+/*--- Main ----*/
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.container_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* .container_div h2{
+    text-align: center;
+    padding-top: 0.3%;
+    margin: 2%;
+    
+} */
+
+/* .container_div p, .container_div h3 {
+    text-align:left;
+    padding-top: 0.3%;
+    margin: 2%; 
+} */
+
+.container_div ul{
+    width: 80%;
+    
+    
+}
+
+.container p{
+    margin-bottom: 2%;
+}
+.container_div p, h2, h3{
+    padding: 0 2%;
+}
+@media screen and (max-width: 991px) {
+	/* BANNIERE */
+    .idx_top_img section{
+        width: 40%;
+    }
+    .idx_top_img{
+        padding-top: 10%;
+    }
+    .sectionOmbriere h3{
+        width: 290px;
+        height: 170px;
+    }
+    .imgSchema{
+        width: 30% !important;
+    }
+}
+@media screen and (max-width:768px){
+    .sectionOmbriere h3 {
+        width: 232px;
+        height: 110px;
+    }
+    .idx_top_img{
+        padding-top: 15%;
+    }
+    .idx_top_img section{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .idx_top_img{
+        height: 35vh;
+        padding-top: 31%;
+        padding-bottom: 4%;
+    }
+    .idx_top_img section{
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}

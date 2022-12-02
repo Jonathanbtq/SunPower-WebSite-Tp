@@ -1,0 +1,215 @@
+.nav_pres{
+    border-bottom: 2px solid #FFDD63;
+}
+/*------VagueImg-------*/
+.fdt_card_photo{
+    position: relative; 
+    vertical-align: center;
+}
+.prs_vag_img{
+    position: absolute;
+    left: 30%
+}
+.maClasse{
+    display: inline-block;
+    vertical-align: top;
+}
+/*------FIN_VagueImg-------*/
+.container_div{
+    display: flex;
+    width: 100%;
+}
+.pres_container_wdt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.prs_top_t{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../images/bg_pres.jpg");
+    background-size: cover;
+    height: 50vh;
+    background-position: 50% 50%;
+    padding-top: 5%;
+}
+.prs_top_t section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    height: 100%;
+    width: 50%;
+    color: #ffffff;
+}
+.prs_top_chf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 5% 0;
+}
+.prs_top_chfwdt{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.prs_top_chfwdt p{
+    width: 30%;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+.prs_b_middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-left: 4px black solid;
+    border-right: 4px black solid;
+}
+.prs_b_middle span{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+/*-----------LES_TROIS_FONDATEURS----------*/
+
+.prs_mdl_fondateur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    background-color: #FBFBFB;
+}
+.prs_mdl_fondateur h2{
+    text-align: center;
+    color: var(--card-title);
+    text-transform: uppercase;
+}
+.prs_mdl_fdtctn{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.fdt_card_photo img{
+    width: 40%;
+}
+.fdt_card_photo p{
+    text-transform: uppercase;
+}
+
+/*----------------TEXT-BOT----------------*/
+
+.prs_bot_text{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px 0 50px 0;
+}
+.prs_bot_text section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.prs_bot_text section p{
+    text-align: center;
+    width: 60%;
+}
+
+/*--------------PARTENAIRE-------------*/
+
+.partenaire_prs_logo{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+    .prs_vag_img{
+        display: none;
+    }
+    .fdt_card_photo img{
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 991px) {
+    .prs_top_chfwdt p{
+        font-size: 20px;
+    }
+    .prs_top_t section{
+        width: 40%;
+    }
+    .prs_top_t{
+        padding-top: 10%;
+    }
+    .fdt_card_photo img{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    .prs_top_t{
+        padding-top: 15%;
+    }
+    .prs_top_t section{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .prs_top_t{
+        height: 35vh;
+        padding-top: 31%;
+        padding-bottom: 4%;
+    }
+    .prs_top_t section{
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .prs_top_chfwdt{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .prs_b_middle{
+        border-top: 4px solid #000000;
+        border-bottom: 4px solid #000000;
+        border-right: 0;
+        border-left: 0;
+        padding: 40px 0;
+    }
+    .prs_top_chf{
+        padding: 15% 0;
+    }
+    .prs_ciq_li a img{
+        width: 30%;
+    }
+    .prs_mdl_fdtctn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .fdt_card_photo img{
+        width: 40%;
+    }
+    .prs_mdl_fondateur{
+        gap: 20px;
+    }
+    .prs_top_chfwdt p{
+        width: 80%;
+    }
+}

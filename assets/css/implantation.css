@@ -1,0 +1,41 @@
+.nav_implantation{
+    border-bottom: 2px solid #FFDD63;
+}
+#box{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #FFDD63;
+    background-image: url("../images/personne_marche.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+.imp_container{
+    padding-top: 200px;
+}
+.imp_ctn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#sectionMap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.ctn_box{
+    width: 80%;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media all and (max-width: 1000px){
+    .ctn_box{
+        display: none;
+    }
+}

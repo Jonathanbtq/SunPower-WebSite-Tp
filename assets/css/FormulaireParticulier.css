@@ -1,0 +1,213 @@
+.nav_contact{
+    border-bottom: 2px solid #FFDD63;
+}
+/*-----Image et Texte TOP-------*/
+
+.idx_top_img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/bg_contact.jpg);
+    background-size: cover;
+    height: 50vh;
+    background-position: 50% 50%;
+    padding-top: 5%;
+}
+
+.idx_top_img section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    height: 100%;
+    width: 50%;
+    color: white;
+}
+/*-----Fin Image et Texte TOP-------*/
+
+
+/*--- Main ----*/
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.container_div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*-----Formulaire------*/
+
+.formulaire{
+    display: flex;
+    width: 45%;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulaire form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+}
+.form_div_card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.form_div_card input{
+    height: 35px;
+    border: none;
+
+}
+
+
+.btn_envoyer input{
+    text-transform: uppercase;
+    
+}
+
+main{
+    display: flex ;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #FFDD63;
+    justify-content: space-around ;
+    padding: 50px 0;
+}
+
+.adresse{
+    text-transform: uppercase;
+    width: 30%;
+
+}
+
+.form_div_card .message{
+    height:100px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+
+}
+
+.btn_envoyer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.adresse{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10%;
+    
+}
+label, .adresse{
+    color: #052E75;
+}
+.btn{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 6px 0 6px 15px;
+    margin: 20px auto;
+    display: inline-block;
+}
+.btn_arrow{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px 10px;
+}
+
+.btn:hover{
+    box-shadow: 4px 4px 14px rgb(0 0 0 / 20%);
+}
+
+/*********Fin Formulaire*******/
+
+@media all and (max-width: 991px){
+    /* BANNIERE */
+    .idx_top_img {
+        padding-top: 10%;
+    }
+    .idx_top_img section{
+        width: 40%;
+    }
+
+    /* FORMULAIRE */
+
+    .formulaire form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .formulaire{
+        width: 80%;
+    }
+    .form_div_card2, .form_div_card3{
+        width: auto;
+    }
+
+
+    .texarea{
+        width: auto;
+    }
+
+    main{
+        display: flex;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 768px){
+    main, .adresse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adresse{
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .idx_top_img section{
+        width: 60%;
+    }
+    .idx_top_img{
+        padding-top: 15%;
+    }
+}
+
+@media all and (max-width: 480px){
+    .idx_top_img {
+        height: 35vh;
+        padding-top: 31% !important;
+        /* padding-bottom: 4%; */
+    }
+    .idx_top_img section {
+        padding-left: 0;
+        width: 85% !important;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+    }        
+}
